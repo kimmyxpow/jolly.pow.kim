@@ -109,20 +109,20 @@ loopy (free i = 0; i < 5; i++) {
 	</div>
 </header>
 <main class="mt-10">
-	<div class="container grid items-start gap-6 md:grid-cols-2">
-		<div class="order-2 grid gap-6 md:order-1">
-			<div class="rounded-xl border-2 bg-sky-300 p-10 shadow-[4px_4px_0_black]">
+	<div class="container grid items-start gap-6 lg:grid-cols-2">
+		<div class="order-2 grid gap-6 lg:order-1">
+			<div class="rounded-xl border-2 bg-sky-300 p-6 shadow-[4px_4px_0_black] sm:p-10">
 				<h1 class="text-6xl font-bold">Code Joyfully with Jolly 🎉</h1>
 			</div>
-			<div class="grid items-start gap-6 xl:grid-cols-2">
-				<div class="rounded-xl border-2 bg-lime-300 p-10 shadow-[4px_4px_0_black]">
+			<div class="grid items-start gap-6 2xl:grid-cols-2">
+				<div class="rounded-xl border-2 bg-lime-300 p-6 shadow-[4px_4px_0_black] sm:p-10">
 					<p class="text-xl">
 						Jolly makes JavaScript fun again! Write code in a playful, easy-to-read syntax and let
 						Jolly handle the boring stuff—converting it to JavaScript. 🚀
 					</p>
 				</div>
 				<div
-					class="flex flex-col justify-between gap-6 rounded-xl border-2 bg-pink-300 p-10 shadow-[4px_4px_0_black]"
+					class="flex flex-col justify-between gap-6 rounded-xl border-2 bg-pink-300 p-6 shadow-[4px_4px_0_black] sm:p-10"
 				>
 					<a
 						onclick={(e) => {
@@ -144,7 +144,9 @@ loopy (free i = 0; i < 5; i++) {
 					</a>
 				</div>
 			</div>
-			<div class="overflow-x-auto rounded-xl border-2 bg-violet-300 p-10 shadow-[4px_4px_0_black]">
+			<div
+				class="overflow-x-auto rounded-xl border-2 bg-violet-300 p-6 shadow-[4px_4px_0_black] sm:p-10"
+			>
 				<p class="text-xl">
 					Let’s bring some joy back into coding with Jolly! 🎉💻 But remember, don’t take this too
 					seriously—it’s just for fun! 😉
@@ -152,7 +154,7 @@ loopy (free i = 0; i < 5; i++) {
 			</div>
 		</div>
 		<div
-			class="order-1 overflow-x-auto rounded-xl border-2 bg-white p-10 shadow-[4px_4px_0_black] md:order-2"
+			class="order-1 overflow-x-auto rounded-xl border-2 bg-white p-6 shadow-[4px_4px_0_black] sm:p-10 lg:order-2"
 		>
 			<Highlight language={javascript} {code} />
 		</div>
