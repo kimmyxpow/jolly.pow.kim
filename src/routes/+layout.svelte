@@ -55,6 +55,6 @@
 	<!-- <meta property="twitter:image" content={$page.data.image} /> -->
 </svelte:head>
 
-<div class="min-h-dvh bg-gradient-to-br from-green-300 via-indigo-300 to-cyan-300 px-4 py-10">
+<div class="min-h-dvh bg-gradient-to-br from-green-300 via-indigo-300 to-cyan-300 py-10">
 	{@render children()}
 </div>

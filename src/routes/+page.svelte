@@ -5,30 +5,30 @@
 	import github from 'svelte-highlight/styles/github';
 
 	const code = `lock greeting = "Hello, Jolly!";
-lock pi = 3.14;
-
-free count = 0;
-free isActive = true;
 
 pick (greeting) {
   option "Hello, Jolly!":
     console.log("This is a Jolly greeting! 🎨");
-    yay;
+    bail;
   option "Hi, there!":
     console.log("A more casual hello. 👋");
-    yay;
+    bail;
   fallback:
     console.log("Unknown greeting. 🤔");
 }
 
-loopy (free i = 0; i < 5; i++) {
-    console.log("Counting with loopy: " + i);
+free score = 85;
+
+when (score >= 90) {
+  console.log("You got an A! 🎉");
+} maybe (score >= 80) {
+  console.log("You got a B! 😄");
+} meh {
+  console.log("You need to work harder! 😢");
 }
 
-free j = 5;
-aslong (j > 0) {
-    console.log("Counting down with aslong: " + j);
-    j = j - 1;
+loopy (free i = 0; i < 5; i++) {
+    console.log("Counting with loopy: " + i);
 }`;
 
 	let isOpen = $state(false);
